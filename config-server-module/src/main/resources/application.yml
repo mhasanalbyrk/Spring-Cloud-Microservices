@@ -1,0 +1,17 @@
+server:
+  port: 8888
+spring:
+  profiles:
+    active:
+      - git
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mhasanalbyrk/mservices-config-server
+          clone-on-start: true
+  config:
+    name: configserver
+
